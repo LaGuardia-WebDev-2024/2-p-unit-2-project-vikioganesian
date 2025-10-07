@@ -19,14 +19,19 @@ Select ONE Additional Feature to Add
         <meta charset="utf-8">
         <title>Unit 2 Project</title>
         <style> 
- body {background-color: rgb(172, 117, 73);} 
+ body {background-color: rgb(121, 31, 31);} 
  
 .prettyfont {font-family: Copperplate, Papyrus, fantasy;}
 img {
   display: block;
   margin: auto;
 }
+#hello
+{font-size: 60px;}
+.centering {text-align: center;
+color: rgb(197, 145, 108);}
 
+.titles
         </style>
     </head>
     <body>
@@ -35,13 +40,51 @@ img {
         <img
          src=https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_1536,h_700,c_fill/https://cdn.odysseytraveller.com/app/uploads/2018/08/GettyImages-856585242.jpg 
         width="400">   
-        <p>Armenia is a little country located in Armenian highlands of West Asia. The first countrey to adoppt christianity</p>
+
+        <p class="centering">Armenia is a little country located in Armenian highlands of West Asia. The first country to adoppt christianity</p>
+        
         <img src="https://www.airpano.com/files/vr-armenia-nature_big.jpg"
         width="300
         ">
+
         <img src="https://media.istockphoto.com/id/504750690/photo/armenian-carpets.jpg?s=612x612&w=0&k=20&c=RaHH1rK-GhAqN7mPj_Fo93GNfROOXPnKzLCGzW7ZFDk="
         width="300">
-        <img src
+
+<h2 class="centering">Places to visit in Armenia</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Monasterio_Khor_Virap%2C_Armenia%2C_2016-10-01%2C_DD_25.jpg/1920px-Monasterio_Khor_Virap%2C_Armenia%2C_2016-10-01%2C_DD_25.jpg" width="400">
+<p class="centering">Although I'm not a religious person I would still recommend to go to see churches in Armenia since is not as religious as it is a historical figures</p>
+      
+    <img class="mySlides" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/2a/f3/16/caption.jpg?w=1200&h=-1&s=1">
+<img class="mySlides" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/2a/f3/16/caption.jpg?w=1200&h=-1&s=1">
+<img class="mySlides" src="">
+<img class="mySlides" src="">
+
+ <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
     </body>
 
 </html>
